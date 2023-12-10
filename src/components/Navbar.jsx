@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import NavLinks from "./NavLinks";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import MenuOverlay from "./MenuOverlay";
 
 const navLinks = [
   {
@@ -27,7 +28,7 @@ const Navbar = () => {
   const [nabvarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 right-0 left-0 z-10 bg-[#353434] b-opacity-90 ">
+    <nav className="fixed top-0 right-0 left-0 z-10 bg-[#353434] b-opacity-100 ">
       <div className="flex flex-wrap items-center justify-between mx-auto px-8 py-2">
         <Link
           href={"/"}
@@ -37,15 +38,11 @@ const Navbar = () => {
         </Link>
         <div className="mobile-menu block md:hidden">
           {!nabvarOpen ? (
-            <button 
-            onClick={()=>setNavbarOpen(true)}
-            className="text-white">
+            <button onClick={() => setNavbarOpen(true)} className="text-white">
               <Bars3Icon className="h-5 w-5"></Bars3Icon>
             </button>
           ) : (
-            <button 
-            onClick={()=>setNavbarOpen(false)}
-            className="text-white">
+            <button onClick={() => setNavbarOpen(false)} className="text-white">
               <XMarkIcon className="h-5 w-5"></XMarkIcon>
             </button>
           )}
@@ -60,6 +57,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      {nabvarOpen ? <MenuOverlay links={navLinks}></MenuOverlay> : null}
     </nav>
   );
 };
