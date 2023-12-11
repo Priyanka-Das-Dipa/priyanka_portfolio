@@ -1,20 +1,162 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React, { useState, useTransition } from "react";
+import TabButton from "./TabButton";
+
+const TabData = [
+  {
+    title: "Skills",
+    id: "skills",
+    content: (
+      <ul>
+        <li className="text-lg flex gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+          JavaScript
+        </li>
+        <li className="text-lg flex gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+          React js
+        </li>
+        <li className="text-lg flex gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+          Node js
+        </li>
+        <li className="text-lg flex gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+          Express js
+        </li>
+        <li className="text-lg flex gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+          Mongo DB
+        </li>
+        <li className="text-lg flex gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+          Tailwind CSS
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "Education",
+    id: "education",
+    content: (
+      <ul className="space-y-3">
+        <li className="text-lg font-semibold ">
+          B.Sc(Engg) in CSE
+          <br />
+          <span className="text-base font-medium">
+            North East University Bangladesh
+          </span>
+        </li>
+        <li className="text-lg font-semibold">
+          H.S.C in Science
+          <br />
+          <p className="text-base font-medium">
+            Scholarshome Girl’s College, Sylhet
+          </p>
+        </li>
+        <li className="text-lg font-semibold">
+          S.S.C in Science
+          <br />
+          <p className="text-base font-medium">
+            Osmani Medical High School, Sylhet{" "}
+          </p>
+        </li>
+      </ul>
+    ),
+  },
+];
 
 const AboutMe = () => {
+  const [tab, setTabs] = useState("skills");
+  const [isPending, startTransition] = useTransition();
 
-  const [tabs, setTabs] = useState("skills")
-  const [startTransition, isPending] = useTransition()
-
-  const handleTabChange = (id) =>{
-    startTransition(()=>{
-      setTabs(id)
-    })
-  }
+  const handleTabChange = (id) => {
+    startTransition(() => {
+      setTabs(id);
+    });
+  };
   return (
     <section className="text-white">
-      <div className="md:grid md:grid-cols-2 gap-2 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:py-16">
+      <div className="md:grid md:grid-cols-1 lg:grid-cols-2 gap-2 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:py-16">
         <div>
           <Image
             src="/image/about-image.png"
@@ -35,12 +177,24 @@ const AboutMe = () => {
             I am excited to work with others to create amazing applications.
           </p>
           <div className="flex flex-row mt-8">
-          <span className="mr-3 font-semibold hover:text-white text-[#ADB7Be] border-b border-purple-500">Skills</span>
-          <span>Education</span>
-          <span>Experience</span>
+            <TabButton
+              selectTab={() => handleTabChange("skills")}
+              active={tab === "skills"}
+            >
+              Skills
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("education")}
+              active={tab === "education"}
+            >
+              Education
+            </TabButton>
+            
+          </div>
+          <div className="mt-5">
+            {TabData.find((t) => t.id === tab).content}
+          </div>
         </div>
-        </div>
-        
       </div>
     </section>
   );
