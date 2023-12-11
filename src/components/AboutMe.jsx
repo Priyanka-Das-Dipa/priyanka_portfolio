@@ -1,7 +1,17 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useState, useTransition } from "react";
 
 const AboutMe = () => {
+
+  const [tabs, setTabs] = useState("skills")
+  const [startTransition, isPending] = useTransition()
+
+  const handleTabChange = (id) =>{
+    startTransition(()=>{
+      setTabs(id)
+    })
+  }
   return (
     <section className="text-white">
       <div className="md:grid md:grid-cols-2 gap-2 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:py-16">
@@ -24,7 +34,13 @@ const AboutMe = () => {
             looking to expand my knowledge and skill set. I am a team player and
             I am excited to work with others to create amazing applications.
           </p>
+          <div className="flex flex-row mt-8">
+          <span className="mr-3 font-semibold hover:text-white text-[#ADB7Be] border-b border-purple-500">Skills</span>
+          <span>Education</span>
+          <span>Experience</span>
         </div>
+        </div>
+        
       </div>
     </section>
   );
