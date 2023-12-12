@@ -155,7 +155,7 @@ const AboutMe = () => {
     });
   };
   return (
-    <section className="text-white">
+    <section className="text-white min-h-screen">
       <div className="md:grid md:grid-cols-1 lg:grid-cols-2 gap-2 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:py-16">
         <div>
           <Image

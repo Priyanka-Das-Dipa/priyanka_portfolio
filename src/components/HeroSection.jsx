@@ -5,11 +5,11 @@ import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
-    <section className="">
+    <section className="lg:h-[70vh] md:mt-[7.5rem] mt-5">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
         <div className="col-span-7 place-self-center">
           <h2 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold">
-            Hi, I'm <br />
+            Hi, I&apos;m <br />
             <span>
               <TypeAnimation
                 sequence={[
@@ -38,7 +38,13 @@ const HeroSection = () => {
               Hire Me
             </button>
             <button className="rounded-full w-full sm:w-fit font-bold bg-transparent hover:bg-stone-800 hover:text-black border text-white border-white  px-6 py-2">
-              Download CV
+              <a
+                href="cv.pdf"
+                download
+                className="hover:text-blue-600 text-white font-semibold py-2 rounded"
+              >
+                Download CV
+              </a>
             </button>
           </div>
         </div>

@@ -4,7 +4,7 @@ import React from "react";
 
 const ProjectCard = ({ imgUrl, title, description, liveLink, gitHubLink }) => {
   return (
-    <div className="card card-compact w-96 rounded-xl shadow-3xl ">
+    <div className="card card-compact md:w-96 w-full rounded-xl shadow-3xl ">
       <div
         className="h-72  w-full rounded-t-xl relative group"
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
