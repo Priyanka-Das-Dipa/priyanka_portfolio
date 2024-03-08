@@ -43,7 +43,7 @@ const EmailSection = () => {
 
   return (
     <>
-      <section className="">
+      <section id="contact" className="">
         <h2 className="text-4xl font-bold text-white my-10 text-center ">
           Contact Me!
         </h2>

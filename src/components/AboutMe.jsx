@@ -155,7 +155,7 @@ const AboutMe = () => {
     });
   };
   return (
-    <section className="text-white min-h-screen">
+    <section id="about" className="text-white min-h-screen">
       <div className="md:grid md:grid-cols-1 lg:grid-cols-2 gap-2 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:py-16">
         <div>
           <Image
@@ -177,12 +177,7 @@ const AboutMe = () => {
             I am excited to work with others to create amazing applications.
           </p>
           <div className="flex flex-row mt-8">
-            <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              Skills
-            </TabButton>
+            
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}

@@ -26,7 +26,7 @@ const projectData = [
 const ProjectsSection = () => {
   return (
     <>
-      <section className="min-h-screen">
+      <section id="project" className="min-h-screen">
         <h2 className="text-4xl font-bold text-white mb-10  text-center ">
           My Projects
         </h2>
