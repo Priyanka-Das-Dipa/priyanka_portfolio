@@ -4,7 +4,6 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import MySkill from "@/components/MySkill";
 import Navbar from "@/components/navbar/Navbar";
-import ProjectsSection from "@/components/project/ProjectsSection";
 
 export default function Home() {
   return (
@@ -14,7 +13,6 @@ export default function Home() {
         <HeroSection></HeroSection>
         <AboutMe></AboutMe>
         <MySkill></MySkill>
-        <ProjectsSection></ProjectsSection>
         <EmailSection></EmailSection>
       </div>
       <Footer></Footer>
