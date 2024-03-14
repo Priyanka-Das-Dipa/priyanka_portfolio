@@ -146,7 +146,7 @@ const TabData = [
 ];
 
 const AboutMe = () => {
-  const [tab, setTabs] = useState("skills");
+  const [tab, setTabs] = useState("education");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -177,7 +177,6 @@ const AboutMe = () => {
             I am excited to work with others to create amazing applications.
           </p>
           <div className="flex flex-row mt-8">
-            
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}

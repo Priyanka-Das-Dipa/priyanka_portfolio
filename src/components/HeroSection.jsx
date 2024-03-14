@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+import scroll from "../../public/image/scroll.png";
 
 const HeroSection = () => {
   return (
@@ -34,18 +35,30 @@ const HeroSection = () => {
             Tailwind.
           </p>
           <div className="">
-            <button className="rounded-full mb-5 w-full sm:w-fit font-bold bg-white hover:bg-stone-200 text-black px-6 py-2 mr-5">
-              Hire Me
-            </button>
-            <button className="rounded-full w-full sm:w-fit font-bold bg-transparent hover:bg-stone-800 hover:text-black border text-white border-white  px-6 py-2">
-              <a
-                href="cv.pdf"
-                download
-                className="hover:text-blue-600 text-white font-semibold py-2 rounded"
-              >
-                Download CV
-              </a>
-            </button>
+            <div className="flex gap-2 items-start">
+              <button className="rounded-full mb-5 w-full sm:w-fit font-bold bg-white hover:bg-stone-200 text-black px-6 py-2 ">
+                See the lasted work
+              </button>
+              <button className="rounded-full w-full sm:w-fit font-bold bg-transparent hover:bg-stone-800 hover:text-black border text-white border-white  px-6 py-2">
+                <a
+                  href="resume.pdf"
+                  download
+                  className="hover:text-purple-700 text-white font-semibold py-2 rounded"
+                >
+                  Download Resume
+                </a>
+              </button>
+            </div>
+            <div>
+              <Image
+              src={scroll}
+              alt="image"
+              style="opacity: 1; transform: translateY(10px) translateZ(0px);"
+              className="text-white transform translate-y-10 translate-z-0 w-[50px]"
+              height={100}
+              width={30}
+              />
+            </div>
           </div>
         </div>
         <div className="col-span-5 place-self-center lg:mt-0 mt-4">

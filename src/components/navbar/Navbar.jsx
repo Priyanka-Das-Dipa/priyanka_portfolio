@@ -28,13 +28,13 @@ const Navbar = () => {
   const [nabvarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 right-0 left-0 z-10 bg-[#353434] b-opacity-100">
+    <nav className=" fixed top-0 right-0 left-0 z-10 bg-[#353434] b-opacity-100">
       <div className="flex flex-wrap items-center justify-between mx-auto px-8 py-2">
         <Link
           href={"/"}
-          className="text-3xl md:text-5xl text-white font-semibold"
+          className="text-xl md:text-5xl text-white font-semibold"
         >
-          Portfolio
+          <p className="text-base">Priyanka&apos;s Portfolio</p>
         </Link>
         <div className="mobile-menu block md:hidden">
           {!nabvarOpen ? (
