@@ -42,7 +42,7 @@ const EmailSection = () => {
 
   return (
     <>
-      <section id="contact" className="">
+      <section id="contact" className="px-5 md:px-12 ">
         <div
           id="contact"
           className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"

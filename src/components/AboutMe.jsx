@@ -155,8 +155,8 @@ const AboutMe = () => {
     });
   };
   return (
-    <section id="about" className="text-white min-h-screen">
-      <div className="md:grid md:grid-cols-1 lg:grid-cols-2 gap-2 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:py-16">
+    <section id="about" className="text-white min-h-screen px-5 md:px-12 ">
+      <div className="md:grid md:grid-cols-1 lg:grid-cols-2 gap-2 md:gap-10 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:py-16">
         <div>
           <Image
             src="/image/about-image.png"

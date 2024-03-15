@@ -13,10 +13,11 @@ import express from "../../public/image/express.png";
 import MongoDB from "../../public/image/mongodb.svg";
 import git from "../../public/image/git-scm-icon.svg";
 import figma from "../../public/image/figma-icon.svg";
+import mongoose from "../../public/image/mongoose.png";
 // bg-gradient-to-r from-[#059bff62] via-[#6549d5] to-[#e33fa1]
 const MySkill = () => {
   return (
-    <div id="skill" className="mb-10 ">
+    <div id="skill" className="mb-10 px-5 md:px-12 ">
         <div className="flex gap-3 items-start" >
             <span className="w-[10px] h-[40px] bg-gradient-to-r from-[#059bff62] via-[#6549d5] to-[#e33fa1]"></span>
             <span className="text-white"> I am comfortable with this technology&apos;s <br className="hidden lg:block"/><span>Committed to learning new technologies and staying up-to-date in my field.</span></span>
@@ -160,6 +161,18 @@ const MySkill = () => {
               height={10}
             />
             <p className="font-semibold text-xl text-white">MongoDB</p>
+          </div>
+        </div>
+        <div className="bg-gradient-to-r from-[#059dff]/10 via-[#6549d5]/10 to-[#e33fa1]/10 rounded-md">
+          <div className="flex justify-center items-center gap-3 px-2 py-1 sm:px-8 sm:py-3 h-full w-full">
+            <Image
+              src={mongoose}
+              className="w-6 xl:w-8 h-6 xl:h-8 bg-cover"
+              alt="mongoose"
+              width={10}
+              height={10}
+            />
+            <p className="font-semibold text-xl text-white">Mongoose</p>
           </div>
         </div>
       </div>

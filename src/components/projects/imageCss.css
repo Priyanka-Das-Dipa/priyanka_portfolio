@@ -1,14 +1,14 @@
-.box {
+.box1 {
   width: 580px;
-  height: 400px;
-  background: url("../../../public/image/demo.png");
+  height: 500px;
+  background: url("../../../public/image/project1.png");
   /* background-color: brown; */
   transition: ease-in-out 12s;
   background-size: cover;
   background-position: top;
 }
 
-.box:hover {
+.box1:hover {
   background-position: bottom;
 }
 
@@ -23,6 +23,12 @@
   100% {
     transform: translateY(40px);
   }
-  
-
 }
+
+
+@media only screen and (max-width: 450px) {
+    .box1 {
+      width: 300px;
+      height: 230px; 
+     }
+  }
