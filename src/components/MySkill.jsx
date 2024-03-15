@@ -16,7 +16,7 @@ import figma from "../../public/image/figma-icon.svg";
 // bg-gradient-to-r from-[#059bff62] via-[#6549d5] to-[#e33fa1]
 const MySkill = () => {
   return (
-    <div  id="skill" className="mb-10 ">
+    <div id="skill" className="mb-10 ">
         <div className="flex gap-3 items-start" >
             <span className="w-[10px] h-[40px] bg-gradient-to-r from-[#059bff62] via-[#6549d5] to-[#e33fa1]"></span>
             <span className="text-white"> I am comfortable with this technology&apos;s <br className="hidden lg:block"/><span>Committed to learning new technologies and staying up-to-date in my field.</span></span>

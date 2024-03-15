@@ -1,0 +1,28 @@
+.box {
+  width: 580px;
+  height: 400px;
+  background: url("../../../public/image/demo.png");
+  /* background-color: brown; */
+  transition: ease-in-out 12s;
+  background-size: cover;
+  background-position: top;
+}
+
+.box:hover {
+  background-position: bottom;
+}
+
+.scroll-down {
+  animation: goDown 3s infinite;
+}
+
+@keyframes goDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+  
+
+}

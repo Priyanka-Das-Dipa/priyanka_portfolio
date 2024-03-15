@@ -4,6 +4,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import scroll from "../../public/image/scroll.png";
 
+
 const HeroSection = () => {
   return (
     <section className="lg:h-[70vh] md:mt-[7.5rem] mt-5">
@@ -53,8 +54,7 @@ const HeroSection = () => {
               <Image
               src={scroll}
               alt="image"
-              style="opacity: 1; transform: translateY(10px) translateZ(0px);"
-              className="text-white transform translate-y-10 translate-z-0 w-[50px]"
+              className="scroll-down w-[50px]"
               height={100}
               width={30}
               />
