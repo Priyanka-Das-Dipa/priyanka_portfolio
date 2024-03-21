@@ -149,7 +149,7 @@ const Projects = () => {
               </ul>
             </div>
             <div className="flex gap-3 mt-5">
-              <Link href="https://technology-and-electroni-8514d.web.app/">
+              <Link href="https://technology-and-electroni-8514d.firebaseapp.com/">
                 <button className="border text-white px-5 py-1 rounded-md">
                   Live
                 </button>
