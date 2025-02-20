@@ -1,0 +1,30 @@
+[
+  {
+    "id": "react-virtual-dom",
+    "title": "React Virtual DOM: How It Works",
+    "description": "Learn how the Virtual DOM improves performance in React applications.",
+    "image": "/image/react-vdom.jpeg",
+    "content": "React uses a virtual DOM to optimize UI updates. Instead of modifying the real DOM directly, React first updates a virtual DOM and then efficiently updates the real DOM..."
+  },
+  {
+    "id": "nextjs-ssr-vs-ssg",
+    "title": "Next.js: SSR vs SSG",
+    "description": "Understand the differences between Server-Side Rendering and Static Site Generation.",
+    "image": "/image/nextjs-ssr-ssg.png",
+    "content": "Next.js offers multiple rendering methods like SSR and SSG. SSR is best for dynamic data, while SSG improves performance by pre-rendering pages..."
+  },
+  {
+    "id": "typescript-in-react",
+    "title": "TypeScript in React",
+    "description": "Why TypeScript is essential for scalable React applications.",
+    "image": "/image/typescript-react.jpeg",
+    "content": "TypeScript provides static typing, improving error detection in React applications. It enhances maintainability and makes large-scale applications more robust..."
+  },
+  {
+    "id": "mongoose-data-modeling",
+    "title": "Mongoose Data Modeling",
+    "description": "Learn how to structure your MongoDB data with Mongoose schemas.",
+    "image": "/image/mongoose-data.jpeg",
+    "content": "Mongoose simplifies working with MongoDB by providing schemas and models, allowing for structured and validated data management..."
+  }
+]

@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import scroll from "../../public/image/scroll.png";
-
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -38,11 +38,11 @@ const HeroSection = () => {
           <div className="">
             <div className="flex gap-2 items-start">
               <button className="rounded-full mb-5 w-full sm:w-fit font-bold bg-white hover:bg-stone-200 text-black px-6 py-2 ">
-                See the lasted work
+                <Link href="#project">See the lasted work</Link>
               </button>
               <button className="rounded-full w-full sm:w-fit font-bold bg-transparent hover:bg-stone-800 hover:text-black border text-white border-white  px-6 py-2">
                 <a
-                  href="resume.pdf"
+                  href="priyanka_das_dipa_frontend_developer.pdf"
                   download
                   className="hover:text-purple-700 text-white font-semibold py-2 rounded"
                 >
@@ -52,11 +52,11 @@ const HeroSection = () => {
             </div>
             <div>
               <Image
-              src={scroll}
-              alt="image"
-              className="scroll-down w-[50px]"
-              height={100}
-              width={30}
+                src={scroll}
+                alt="image"
+                className="scroll-down w-[50px]"
+                height={100}
+                width={30}
               />
             </div>
           </div>

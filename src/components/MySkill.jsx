@@ -14,6 +14,8 @@ import MongoDB from "../../public/image/mongodb.svg";
 import git from "../../public/image/git-scm-icon.svg";
 import figma from "../../public/image/figma-icon.svg";
 import mongoose from "../../public/image/mongoose.png";
+import typescript from "../../public/image/typescript.png";
+import redux from "../../public/image/redux.png";
 // bg-gradient-to-r from-[#059bff62] via-[#6549d5] to-[#e33fa1]
 const MySkill = () => {
   return (
@@ -120,6 +122,30 @@ const MySkill = () => {
                 height={10}
               />
               <p className="font-semibold text-xl text-white">Next js</p>
+            </div>
+          </div>
+          <div className="bg-gradient-to-r from-[#059dff]/10 via-[#6549d5]/10 to-[#e33fa1]/10 rounded-md">
+            <div className="flex justify-center items-center gap-3 px-2 py-1 sm:px-8 sm:py-3 h-full w-full">
+              <Image
+                src={typescript}
+                className="w-6 xl:w-8 h-6 xl:h-8"
+                alt="next"
+                width={10}
+                height={10}
+              />
+              <p className="font-semibold text-xl text-white">Typescript</p>
+            </div>
+          </div>
+          <div className="bg-gradient-to-r from-[#059dff]/10 via-[#6549d5]/10 to-[#e33fa1]/10 rounded-md">
+            <div className="flex justify-center items-center gap-3 px-2 py-1 sm:px-8 sm:py-3 h-full w-full">
+              <Image
+                src={redux}
+                className="w-6 xl:w-8 h-6 xl:h-8"
+                alt="next"
+                width={10}
+                height={10}
+              />
+              <p className="font-semibold text-xl text-white">Redux</p>
             </div>
           </div>
         </div>

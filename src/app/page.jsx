@@ -5,6 +5,7 @@ import HeroSection from "@/components/HeroSection";
 import MySkill from "@/components/MySkill";
 import Navbar from "@/components/navbar/Navbar";
 import Projects from "@/components/projects/Projects";
+import Blog from "@/pages/blog";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <AboutMe></AboutMe>
         <MySkill></MySkill>
         <Projects></Projects>
+        <Blog />
         <EmailSection></EmailSection>
       </div>
       <Footer></Footer>

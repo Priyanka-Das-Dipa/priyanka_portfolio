@@ -5,7 +5,7 @@ import NavLinks from "../NavLinks";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "../MenuOverlay";
 import { usePathname } from "next/navigation";
-import  "./navbar.css"
+import "./navbar.css";
 
 const navLinks = [
   {
@@ -28,7 +28,7 @@ const navLinks = [
 
 const Navbar = () => {
   const [nabvarOpen, setNavbarOpen] = useState(false);
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   return (
     <nav className=" fixed top-0 right-0 left-0 z-10 bg-[#353434] b-opacity-100">
@@ -54,9 +54,11 @@ const Navbar = () => {
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0 mr-10">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLinks 
-                className={` ${pathname === link.path ? 'active' : ''}`}
-                href={link.path} title={link.title}></NavLinks>
+                <NavLinks
+                  className={` ${pathname === link.path ? "active" : ""}`}
+                  href={link.path}
+                  title={link.title}
+                ></NavLinks>
               </li>
             ))}
           </ul>
