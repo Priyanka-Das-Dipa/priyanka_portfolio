@@ -27,7 +27,7 @@
 .box3 {
   width: 580px;
   height: 600px;
-  background: url("../../../public/image/project2.png");
+  background: url("../../../public/image/project_3.jpg");
   /* background-color: brown; */
   transition: ease-in-out 12s;
   background-size: cover;
@@ -35,6 +35,19 @@
 }
 
 .box3:hover {
+  background-position: bottom;
+}
+.box4 {
+  width: 580px;
+  height: 600px;
+  background: url("../../../public/image/project_4.jpg");
+  /* background-color: brown; */
+  transition: ease-in-out 12s;
+  background-size: cover;
+  background-position: top;
+}
+
+.box4:hover {
   background-position: bottom;
 }
 
