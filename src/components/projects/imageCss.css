@@ -24,6 +24,19 @@
 .box2:hover {
   background-position: bottom;
 }
+.box3 {
+  width: 580px;
+  height: 600px;
+  background: url("../../../public/image/project2.png");
+  /* background-color: brown; */
+  transition: ease-in-out 12s;
+  background-size: cover;
+  background-position: top;
+}
+
+.box3:hover {
+  background-position: bottom;
+}
 
 .scroll-down {
   animation: goDown 3s infinite;
@@ -38,10 +51,9 @@
   }
 }
 
-
 @media only screen and (max-width: 450px) {
-    .box1 .box2{
-      width: 300px;
-      height: 230px; 
-     }
+  .box1 .box2 {
+    width: 300px;
+    height: 230px;
   }
+}
