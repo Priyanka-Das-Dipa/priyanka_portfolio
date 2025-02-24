@@ -167,7 +167,10 @@ const AboutMe = () => {
           ></Image>
         </div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full ">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <div className="flex gap-3 items-start">
+            <span className="w-[10px] h-[40px] bg-gradient-to-r from-[#059bff62] via-[#6549d5] to-[#e33fa1]"></span>
+            <span className="text-white text-4xl pb-2">About Me</span>
+          </div>
           <p className="text-base lg:text-lg">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience

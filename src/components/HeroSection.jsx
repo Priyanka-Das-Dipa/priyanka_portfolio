@@ -28,12 +28,12 @@ const HeroSection = () => {
             </span>
           </h2>
           <p className="text-white text-lg lg:text-xl mb-4">
-            I am a recent graduate from North East University, Bangladesh, with
-            a strong dedication to advancing my skills in web development. Over
-            the past six months, I have immersed myself in the world of
-            technology, focusing particularly on key technologies such as
-            React.js, Node.js, MongoDB, and the versatile CSS framework
-            Tailwind.
+            I am a graduate from North East University, Bangladesh, with a
+            strong dedication to advancing my skills in web development. A
+            strong foundation in building dynamic and user-centric solutions.
+            Committed to continuous learning, innovation, and delivering
+            high-quality digital experiences. Eager to contribute creativity,
+            problem-solving skills, and a growth mindset to impactful projects.
           </p>
           <div className="">
             <div className="flex gap-2 items-start">

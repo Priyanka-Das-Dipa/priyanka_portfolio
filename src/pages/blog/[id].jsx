@@ -52,11 +52,11 @@ const BlogDetails = ({ blog }) => {
   if (!blog) return <p className="text-center mt-10">Loading...</p>;
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 ">
       <img
         src={blog?.image}
         alt={blog?.title}
-        className="w-full h-60 object-cover rounded-md"
+        className="w-full h-60 w-full object-cover rounded-md"
       />
       <h1 className="text-3xl font-bold mt-4">{blog?.title}</h1>
       <p className="text-gray-600 mt-2">{blog?.content}</p>
