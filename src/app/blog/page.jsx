@@ -1,16 +1,10 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React from "react";
+import blog from "../../../public/blogs.json";
 
-const Blog = () => {
-  const [blogs, setBlogs] = useState([]);
-
-  useEffect(() => {
-    fetch("/blogs.json")
-      .then((res) => res.json())
-      .then((data) => setBlogs(data));
-  }, []);
+const BlogPage = () => {
   return (
     <section className="bg-gradient-to-b from-[#0c0c1d] to-[#111132] px-5 md:px-12 ">
       <div className="pt-28 pb-28">
@@ -18,10 +12,10 @@ const Blog = () => {
           My Blogs
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {blogs.map((blog) => (
+          {blog.map((blog) => (
             <div
               key={blog.id}
-              className="bg-slate-800 shadow-lg rounded-lg p-4 h-[450px]"
+              className="bg-slate-800 shadow-lg rounded-lg p-4 h-[500px]"
             >
               <Image
                 height={300}
@@ -47,4 +41,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogPage;

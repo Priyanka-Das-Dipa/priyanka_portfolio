@@ -21,6 +21,7 @@ const Experience = () => {
               <div className="text-slate-200">
                 <p className="text-2xl font-bold">Miatech.Pro </p>
                 <p>Frontend Developer | May, 2024 - August, 2024 (Remote) </p>
+                <p>An IT company based in Brazil.</p>
                 <ul className="list-disc pl-5 py-5">
                   <li>
                     Collaborated with design and backend teams to develop
